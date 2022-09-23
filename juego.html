@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Juego Ahorcado</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="imagen" src="imagen/Vector.png" alt="logo Alura">
+    </header>
+
+    <main>
+        <canvas id="canvas1"></canvas>
+        <div class="inputLetras"></div>
+        <div class="contenedorLetras"></div>
+
+        <div class="botones">
+            <button class="nuevoJuego" onclick="guardarYempezar()"> Nuevo Juego</button>
+            <button class="desistir"> Desistir</button>
+        </div>
+
+    </main>
+    <footer></footer>
+    <script src="js/juego.js"></script>
+</body>
+
+</html>

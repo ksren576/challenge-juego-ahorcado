@@ -1,0 +1,127 @@
+body {
+    background: #e5e5e5;
+}
+
+.titulo-principal {
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    stroke: #000000;
+}
+
+
+.boton {
+    padding: 24px;
+    width: 317px;
+    height: 114px;
+    left: 561px;
+    top: 402px;
+    background: #0a3871;
+    border-radius: 24px;
+    font-family: 'inter';
+    font-style: normal;
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.agregar {
+    padding: 15px;
+    width: 232px;
+    height: 40px;
+    top: 24px;
+    left: 24px;
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    line-height: 100%;
+    border-radius: 12px;
+    color: #0a3871;
+    background: #e5e5e5;
+    margin-top: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 208px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 208px;
+}
+
+.cancelar {
+    padding: 24px;
+    width: 332px;
+    background: #e5e5e5;
+    border-radius: 24px;
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0a3871;
+    margin-left: 10px;
+}
+
+.guardar {
+    padding: 24px;
+    width: 332px;
+    background: #0a3871;
+    border-radius: 24px;
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 19px;
+    margin-left: 10px;
+}
+
+.botones-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 208px;
+}
+
+.nuevojuego {
+    padding: 24px;
+    width: 332px;
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    line-height: 100%;
+    border-radius: 24px;
+    color: #ffffff;
+    background: #0a3871;
+
+}
+
+.desistir {
+    padding: 24px;
+    width: 332px;
+    background: #ffffff;
+    border-radius: 24px;
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0a3871;
+    line-height: 19px;
+    margin-left: 10px
+}

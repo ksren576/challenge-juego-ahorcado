@@ -1,0 +1,56 @@
+ body {
+     background-color: #e5e5e5;
+ }
+
+ #imagen {
+     height: 48px;
+     width: 31px;
+     left: 44px;
+     top: 0px;
+     border-radius: 0px;
+ }
+
+ #canvas1 {
+     display: flex;
+     width: 1200px;
+     height: 600px;
+     background-color: #ffffff;
+ }
+
+ .nuevoJuego {
+     padding: 24px;
+     width: 332px;
+     background: #0a3871;
+     border-radius: 24px;
+     font-family: 'inter';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     color: #ffffff;
+     line-height: 19px;
+     margin-left: 10px;
+ }
+
+ .desistir {
+
+     padding: 24px;
+     width: 332px;
+     background: #e5e5e5;
+     border-radius: 24px;
+     font-family: 'inter';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 19px;
+     color: #0a3871;
+     margin-left: 10px;
+ }
+
+ .botones {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     margin-top: 30px;
+ }
