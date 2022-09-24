@@ -1,22 +1,18 @@
+const palabras = sessionStorage.getItem('palabras') ? JSON.parse(sessionStorage.getItem('palabras')) : ["MANZANA", "CEREZA", "KIWI"];
+const input = document.querySelector('.input-text');
+const letrasValidas = [...'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'];
+
+function cancelar() {
+    window.location.href = "index.html";
+}
 
 function guardarYempezar() {
-    window.location.href = "lineas.html";
-}
-
-let palabraSecreta = [];
-
-function validarLetras(inputLetras) {
-    let letrasMayusculas = "ABCDEFGHIJKLMNÑOPQRST";
-    let mensajeError = "";
-    for (let letras of mensajeError) {
-        if (!letrasMayusculas.includes(letras)) {
-            mensajeError = "sólo letras mayúsculas"
-        }
+    const nuevaPalabra = input.value;
+    if ([...nuevaPalabra].every((letra) => letrasValidas.includes(letra))) {
+        sessionStorage.setItem('palabras', JSON.stringify([...palabras, nuevaPalabra]));
+        document.querySelector('.error').style.display = 'none';
+        window.location.href = "juego.html";
+    } else {
+        document.querySelector('.error').style.display = 'block';
     }
-    if (mensajeError.length === 0) {
-        return true;
-    } alert(mensajeError);
-    return false;
 }
-
-validarLetras();

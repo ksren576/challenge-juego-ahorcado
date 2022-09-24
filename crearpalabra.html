@@ -16,10 +16,17 @@
 <body>
     <img src="imagen/Vector.png" alt="Logo Alura">
     <h1 class="titulo-principal">Ingrese una palabra</h1>
+    <div class="container">
+        <div class="error">Solo letras mayúsculas y sin tildes</div>
+    </div>
+
+    <div class="container">
+        <input class="input-text" type="text" placeholder="Ingrese una palabra (solo mayúsculas)" />
+    </div>
 
     <div class="botones">
-        <input class="guardar" type="submit" onclick="guardarYempezar()" value="Guardar y empezar " />
-        <input class="cancelar" type="submit" value="Cancelar" onclick="agregarPalabra" />
+        <input class="botonPrincipal" type="submit" onclick="guardarYempezar()" value="Guardar y empezar " />
+        <input class="botonSecundario" type="submit" value="Cancelar" onclick="cancelar()" />
     </div>
     <script src="js/crearpalabra.js"></script>
 </body>

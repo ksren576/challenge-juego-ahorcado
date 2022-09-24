@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Juego Ahorcado</title>
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/juego.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,17 +20,26 @@
     </header>
 
     <main>
-        <canvas id="canvas1"></canvas>
-        <div class="inputLetras"></div>
-        <div class="contenedorLetras"></div>
+        <div class="container">
+            <div class="error">Fin del juego!</div>
+            <div class="exito">Ganaste, felicidades!</div>
+        </div>
+        <div class="container">
+            <canvas id="canvas1"></canvas>
+        </div>
+        <div id="letrasCorrectas" class="container"></div>
+        <div id="letrasIncorrectas" class="container">
+        </div>
 
-        <div class="botones">
-            <button class="nuevoJuego" onclick="guardarYempezar()"> Nuevo Juego</button>
-            <button class="desistir"> Desistir</button>
+        <div class="container">
+            <button class="botonPrincipal" onclick="iniciarjuego()">Nuevo Juego</button>
+            <button class="botonSecundario" onclick="desistir()"> Desistir</button>
         </div>
 
     </main>
     <footer></footer>
+    <script src="js/crearpalabra.js"></script>
+    <script src="js/dibujarAhorcado.js"></script>
     <script src="js/juego.js"></script>
 </body>
 

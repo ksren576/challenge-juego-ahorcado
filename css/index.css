@@ -1,5 +1,12 @@
 body {
     background: #e5e5e5;
+    font-family: 'inter';
+}
+
+.container {
+    display: flex;
+    margin: 30px 0;
+    justify-content: center;
 }
 
 .titulo-principal {
@@ -7,40 +14,6 @@ body {
     text-align: center;
     padding: 30px;
     stroke: #000000;
-}
-
-
-.boton {
-    padding: 24px;
-    width: 317px;
-    height: 114px;
-    left: 561px;
-    top: 402px;
-    background: #0a3871;
-    border-radius: 24px;
-    font-family: 'inter';
-    font-style: normal;
-    font-size: 18px;
-    color: #ffffff;
-    margin-top: 100px;
-    cursor: pointer;
-}
-
-.agregar {
-    padding: 15px;
-    width: 232px;
-    height: 40px;
-    top: 24px;
-    left: 24px;
-    font-family: 'inter';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    line-height: 100%;
-    border-radius: 12px;
-    color: #0a3871;
-    background: #e5e5e5;
-    margin-top: 30px;
 }
 
 .buttons {
@@ -61,9 +34,25 @@ body {
     margin-top: 208px;
 }
 
-.cancelar {
+.botonPrincipal {
     padding: 24px;
-    width: 332px;
+    gap: 8px;
+    min-width: 300px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+    border: none;
+    font-family: 'inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.botonSecundario {
+    padding: 24px;
+    min-width: 300px;
     background: #e5e5e5;
     border-radius: 24px;
     font-family: 'inter';
@@ -73,55 +62,35 @@ body {
     line-height: 19px;
     color: #0a3871;
     margin-left: 10px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    margin: 10px;
 }
 
-.guardar {
-    padding: 24px;
-    width: 332px;
-    background: #0a3871;
-    border-radius: 24px;
-    font-family: 'inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #ffffff;
-    line-height: 19px;
-    margin-left: 10px;
+.input-text {
+    min-width: 500px;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
 }
 
-.botones-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: center;
-    margin-top: 208px;
+.error {
+    text-align: center;
+    color: #b71c1c;
+    background-color: #ffcdd2;
+    padding: 10px 100px;
+    border: 2px solid #b71c1c;
+    border-radius: 20px;
+    display: none;
 }
 
-.nuevojuego {
-    padding: 24px;
-    width: 332px;
-    font-family: 'inter';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    line-height: 100%;
-    border-radius: 24px;
-    color: #ffffff;
-    background: #0a3871;
-
-}
-
-.desistir {
-    padding: 24px;
-    width: 332px;
-    background: #ffffff;
-    border-radius: 24px;
-    font-family: 'inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #0a3871;
-    line-height: 19px;
-    margin-left: 10px
+.exito {
+    text-align: center;
+    color: #2e7d32;
+    background-color: #c8e6c9;
+    padding: 10px 100px;
+    border: 2px solid #2e7d32;
+    border-radius: 20px;
+    display: none;
 }
